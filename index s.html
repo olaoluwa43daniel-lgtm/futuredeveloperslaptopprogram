@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Developers Laptop Program</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #111111;
+    }
+    header {
+      background: linear-gradient(90deg, #E50914, #007BFF);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .item {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #f9f9f9;
+    }
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .item h3 {
+      background-color: #007BFF;
+      color: white;
+      margin: 0;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    .item p {
+      padding: 0.5rem 1rem 1rem;
+      font-size: 0.95rem;
+    }
+    .form-section {
+      background-color: #f2f2f2;
+      padding: 2rem 1rem;
+      border-top: 3px solid #E50914;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      background-color: #E50914;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #007BFF;
+    }
+    footer {
+      background-color: #111111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Future Developers Laptop Program</h1>
+    <p>Empowering future software developers with the tools they need to succeed</p>
+  </header>
+
+  <section>
+    <h2 style="color:#E50914; text-align:center;">Giveaway Items</h2>
+    <div class="gallery">
+      <div class="item">
+        <img src="https://image-us.samsung.com/SamsungUS/home/computing/galaxy-books/gb4-series/gallery-images/SDSAC-9308-GB4Ultra-configurator-800x600.jpg?$product-details-jpg$"Samsung Galaxy Book 4 Ultra Laptop" />
+
+        <h3>Samsung Galaxy Book 4 Ultra</h3>
+        <p>Powerful performance laptop designed for coding, creativity, and innovation.</p>
+      </div>
+      <div class="item">
+        <img src="https://snpi.dell.com/snp/images/products/large/en-us~460-BDWT/460-BDWT.jpg" />
+        <h3>Dell Pro EcoLoop Backpack</h3>
+        <p>Durable, eco-friendly backpack to safely carry your laptop and accessories.</p>
+      </div>
+      <div class="item">
+        <img src="https://snpi.dell.com/snp/images/products/large/en-us~520-BBHQ_v1/520-BBHQ_v1.jpg" />
+        <h3>Wireless ANC Headset WL7024</h3>
+        <p>Premium wireless headset with Active Noise Cancellation for focused learning.</p>
+      </div>
+      <div class="item">
+        <img src="https://snpi.dell.com/snp/images/products/large/en-us~580-BBCJ/580-BBCJ.jpg"Dell Pro Keyboard and Mouse KM900" />
+        <h3>Dell Pro Premium Collaboration Keyboard & Mouse KM900</h3>
+        <p>Modern keyboard and mouse set for comfort and productivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="apply">
+    <h2 style="text-align:center; color:#007BFF;">Apply Now</h2>
+    <p style="text-align:center;">Fill the form below to apply for the Future Developers Laptop Program.</p>
+    <form action="https://formspree.io/f/mpwkwkav" method="POST">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email (optional)</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="phone">Phone Number (optional)</label>
+      <input type="text" id="phone" name="phone" />
+
+      <label for="message">Why do you want a laptop?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    <p style="text-align:center; margin-top:1rem; font-size:0.9rem;">
+      *By applying, you agree that we may contact you about your submission.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Future Developers Laptop Program — All Rights Reserved.
+  </footer>
+
+</body>
+</html>
